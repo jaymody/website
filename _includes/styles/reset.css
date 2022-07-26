@@ -1,0 +1,20 @@
+* {
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  color: var(--body-color);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}

@@ -1,46 +1,58 @@
-/* variables */
+/* ********************************* vars ********************************** */
 :root {
-  --font-size: 18px;
-  --line-height: 1.5;
-  --heading-font: 'Avenir', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --body-font: 'Iowan Old Style', Garamond, Georgia, serif;
-
-  --heading-color: #000;
-  --body-color: #3d3d3d;
+    --heading-color: #000;
+    --body-color: #3d3d3d;
+    --skyblue: #008bd1;
+    --skyblue-dark: #006ba1;
 }
 
-/* reset */
+/* ******************************** reset ********************************* */
 * {
-margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
+    margin: 100;
+    padding: 0;
 }
 
 html {
-  font-family: var(--body-font);
-  font-size: var(--font-size);
-  line-height: var(--line-height);
-  color: var(--body-color);
+    font-size: 18px; /* sets the rem unit size */
+}
+
+body {
+    /* font stuff */
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+
+    /* max width, probably best width to consume the content */
+    max-width: 800px;
+
+    /* center the page */
+    margin: 0 auto;
+
+    /* use 4vw of padding on left and right if under max width,
+    which makes it look good on phones */
+    padding: 0 8vw;
 }
 
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
-/* typography */
+/* ****************************** typography ******************************* */
+a {
+    color: var(--skyblue);
+}
+a:hover {
+    color: var(--skyblue-dark);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
-  color: var(--heading-color);
-  font-weight: 700;
+    font-weight: 700;
 }
 
 h1 { font-size: 2rem; }
@@ -51,5 +63,50 @@ h5 { font-size: 1rem; }
 h6 { font-size: 0.8rem; }
 
 p, li {
-  margin: 1rem 0;
+    margin: 1rem 0;
+}
+
+
+/* ****************************** navbar ******************************* */
+#navbar {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* title */
+#navbar > #navbar-title > a {
+    margin-right: 0.5em;
+    text-decoration: none;
+    color: var(--site-title);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#navbar > #navbar-title  > a:hover {
+    text-decoration: underline;
+}
+
+/* navlinks */
+#navbar > #navbar-textlinks > a {
+    margin: 0 0.5em;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#navbar > #navbar-textlinks > a:hover {
+    text-decoration: underline;
+}
+
+/* iconlinks */
+#navbar > #navbar-iconlinks {
+    margin-right: auto;
+    font-size: 1.2rem;
+    opacity: .7;
+}
+
+#navbar > #navbar-iconlinks > a {
+    margin: 0 0.5em;
+    text-decoration: none;
 }

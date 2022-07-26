@@ -1,19 +1,26 @@
 /* ********************************* vars ********************************** */
 :root {
-    --heading-color: #000;
-    --body-color: #3d3d3d;
+    --white: #ffffff;
+    --black: #000000;
+
     --skyblue: #008bd1;
     --skyblue-dark: #006ba1;
+
+    --hr: #cccccc;
+    --border: #dddddd;
+    --codeblock-header: #eeeeee;
+    --blockquote: #99999998;
+    --site-title: #666666;
 }
 
 /* ******************************** reset ********************************* */
 * {
-    margin: 100;
+    margin: 0;
     padding: 0;
 }
 
 html {
-    font-size: 18px; /* sets the rem unit size */
+    font-size: 17px; /* sets the rem unit size */
 }
 
 body {
@@ -46,26 +53,6 @@ a:hover {
     color: var(--skyblue-dark);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 700;
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
-h5 { font-size: 1rem; }
-h6 { font-size: 0.8rem; }
-
-p, li {
-    margin: 1rem 0;
-}
-
 
 /* ****************************** navbar ******************************* */
 #navbar {
@@ -88,7 +75,7 @@ p, li {
     text-decoration: underline;
 }
 
-/* navlinks */
+/* textlinks */
 #navbar > #navbar-textlinks > a {
     margin: 0 0.5em;
     text-decoration: none;
@@ -109,4 +96,135 @@ p, li {
 #navbar > #navbar-iconlinks > a {
     margin: 0 0.5em;
     text-decoration: none;
+}
+
+/* ****************************** post header ******************************* */
+#post-header {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#post-header > #post-header-title {
+    font-weight: 300;
+}
+
+#post-header > #post-header-title > a {
+    text-decoration: none;
+}
+
+#post-header > #post-header-date {
+    opacity: 0.5;
+}
+
+
+#post-content > * {
+    /* by default, every immediate child element of the post-content div will
+    have a top margin and bottom margin of 1rem which provides a nice default
+    for consistent spacing between blocks of different content */
+    margin: 1rem 0;
+}
+
+#post-content > h1,
+#post-content > h2,
+#post-content > h3,
+#post-content > h4,
+#post-content > h5,
+#post-content > h6 {
+    margin-top: 2rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+#post-content > ol,
+#post-content > ul {
+    padding-left: 1rem;
+}
+#post-content ol,
+#post-content ul {
+    margin-left: 1rem;
+}
+
+#post-content > hr {
+    border: 0;
+    border-top: 1px solid var(--hr);
+}
+
+#post-content > blockquote {
+    border-left: 3px solid var(--codeblock-header);
+    padding-left: 20px;
+    opacity: .6;
+    font-style: italic;
+}
+
+#post-content > video,
+#post-content > img,
+#post-content > figure,
+#post-content > p > img {
+    max-width: 100%;
+    border-radius: 8px;
+
+    /* center */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#post-content figure > img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+#post-content figure > figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: .6;
+}
+
+/* mathjax */
+#post-content .MathJax {
+    font-size: 1.2rem !important;
+}
+
+/* code */
+#post-content > pre * {
+    font-size: 0.9rem;
+}
+#post-content code {
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+#post-content > pre > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--codeblock-header);
+    padding: 0.4em 0;
+
+    border: 0.5px solid var(--border);
+    border-radius: 8px 8px 0px 0px !important;
+}
+#post-content > pre > div > i {
+    opacity: .4;
+}
+#post-content > pre > div > p {
+    margin-left: 0.5em;
+    opacity: .5;
+}
+#post-content > pre > code {
+    border: 0.5px solid var(--border);
+    border-top: 0;
+    border-radius: 0px 0px 8px 8px !important;
+}
+#post-content .hljs-ln-numbers {
+    text-align: right;
+    color: #aaaaaa;
+    padding-right: 1em !important;
+}
+#post-content .hljs-comment {
+    opacity: 0.6; /* make comments less visible and easier to differentiate */
+}
+
+/* ****************************** site footer ******************************* */
+#site-footer {
+    margin-bottom: 40px;
 }

@@ -6,15 +6,46 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- load stylesheet -->
-    <link href="/styles.css" rel="stylesheet" />
+    <!-- load font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- load highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/stackoverflow-light.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+    <!-- load highlight.js-line-numbers.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
 
     <!-- load font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- apply highlight.js -->
+    <script>
+    hljs.configure({ cssSelector: 'code' }); // enables highlight.js for inline code
+    hljs.highlightAll();
+    hljs.initLineNumbersOnLoad();
+
+    // add header to codeblocks
+    addEventListener('load', function() {
+        var blocks = document.querySelectorAll('pre code.hljs');
+        Array.prototype.forEach.call(blocks, function(block) {
+            var language = block.result.language;
+            block.insertAdjacentHTML("beforebegin",`<div><i class="fa fa-code"></i> <p>${language}</p></div>`)
+        });
+    })
+    </script>
+
+    <!-- load stylesheet -->
+    <link href="/styles.css" rel="stylesheet" />
   </head>
 
   <body>
     {% include "nav.liquid" %}
     {{ content }}
+    {% include "footer.liquid" %}
   </body>
 </html>

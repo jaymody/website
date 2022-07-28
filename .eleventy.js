@@ -8,5 +8,6 @@ module.exports = function (config) {
   });
   md.use(require('markdown-it-footnote')); // use [^#] to create footnotes
   md.use(require('markdown-it-mathjax')()); // render latex ($$...$$) with mathjax
+  md.use(require('markdown-it-multimd-table')) // add support for tables
   config.setLibrary("md", md);
 }

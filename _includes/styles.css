@@ -159,6 +159,7 @@ a:hover {
 #post-content > video,
 #post-content > img,
 #post-content > figure,
+#post-content > figure > img,
 #post-content > p > img {
     max-width: 100%;
     border-radius: 8px;
@@ -167,10 +168,6 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-#post-content figure > img {
-    max-width: 100%;
-    border-radius: 8px;
 }
 #post-content figure > figcaption {
     margin-top: 0.5rem;

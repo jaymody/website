@@ -115,15 +115,15 @@ $$\text{dist}_{ij} = \sqrt{\sum_{k=1}^d (x_{ik} - y_{jk})^2}$$
 
 What happens if we expand out the expression in the sum?
 
-$$\text{dist}_{ij} = \sqrt{\sum_{k=1}^d x^2_{ik} - 2x_{ik}y_{jk} + y^2_{jk}}\\$$
+$$\text{dist}_{ij} = \sqrt{\sum_{k=1}^d x^2_{ik} - 2x_{ik}y_{jk} + y^2_{jk}}$$
 
 Interesting, let's distribute the sum:
 
-$$\text{dist}_{ij} = \sqrt{\sum_{k=1}^d x^2_{ik} - 2 \sum_{k=1}^d x_{ik}y_{jk} + \sum_{k=1}^dy^2_{jk}}\\$$
+$$\text{dist}_{ij} = \sqrt{\sum_{k=1}^d x^2_{ik} - 2 \sum_{k=1}^d x_{ik}y_{jk} + \sum_{k=1}^dy^2_{jk}}$$
 
 You'll notice that each of these sums are just dot products, so let's replace the ugly notation and get a much cleaner expression:
 
-$$\text{dist}_{ij} = \sqrt{x_i \cdot x_i - 2x_i \cdot y_j + y_j \cdot y_j}\\$$
+$$\text{dist}_{ij} = \sqrt{x_i \cdot x_i - 2x_i \cdot y_j + y_j \cdot y_j}$$
 
 Notice, for all combinations of $i, j$, the middle term is unique, but the left and right terms are repeated. Imagine fixing either $i$ or $j$ and iterate the other variable, you'll see that $x_i \cdot x_i$ shows up $j$ times and $y_j \cdot y_j$ shows up $i$ times. So, our challenge is to figure out how to compute all possible $x_i \cdot x_i$, $x_i \cdot y_j$, and  $y_j \cdot y_j$, and then add them together in the right way. All of this without loops. Let's try it:
 
@@ -297,6 +297,7 @@ You can also trigger some useful system commands like:
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
 
+---
 
 ## Headings
 
@@ -326,8 +327,9 @@ The blockquote element represents content that is quoted from another source, op
 
 #### Blockquote with attribution
 
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
+> Don't communicate by sharing memory, share memory by communicating.
+>
+> — Rob Pike[^1]
 
 [^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
 

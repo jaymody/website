@@ -3,8 +3,8 @@
     --white: #ffffff;
     --black: #000000;
 
-    --skyblue: #008bd1;
-    --skyblue-dark: #006ba1;
+    --link-blue: #008bd1;
+    --link-blue-hover: #006ba1;
 
     --hr: #cccccc;
     --border: #dddddd;
@@ -40,19 +40,19 @@ body {
     padding: 0 8vw;
 }
 
+/* ****************************** typography ******************************* */
+a {
+    color: var(--link-blue);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--link-blue-hover);
+    text-decoration: underline;
+}
 img {
     max-width: 100%;
     display: block;
 }
-
-/* ****************************** typography ******************************* */
-a {
-    color: var(--skyblue);
-}
-a:hover {
-    color: var(--skyblue-dark);
-}
-
 
 /* ****************************** navbar ******************************* */
 #navbar {
@@ -65,37 +65,26 @@ a:hover {
 /* title */
 #navbar > #navbar-title > a {
     margin-right: 0.5em;
-    text-decoration: none;
     color: var(--site-title);
     font-size: 1.25rem;
     font-weight: 600;
 }
 
-#navbar > #navbar-title  > a:hover {
-    text-decoration: underline;
-}
-
 /* textlinks */
 #navbar > #navbar-textlinks > a {
     margin: 0 0.5em;
-    text-decoration: none;
     font-weight: 500;
-}
-
-#navbar > #navbar-textlinks > a:hover {
-    text-decoration: underline;
 }
 
 /* iconlinks */
 #navbar > #navbar-iconlinks {
     margin-right: auto;
     font-size: 1.2rem;
-    opacity: .7;
+    opacity: 0.7;
 }
 
 #navbar > #navbar-iconlinks > a {
     margin: 0 0.5em;
-    text-decoration: none;
 }
 
 /* ****************************** post header ******************************* */
@@ -115,7 +104,6 @@ a:hover {
 #post-header > #post-header-date {
     opacity: 0.5;
 }
-
 
 #post-content > * {
     /* by default, every immediate child element of the post-content div will

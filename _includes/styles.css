@@ -54,6 +54,19 @@ img {
     display: block;
 }
 
+/* **************************** common classes **************************** */
+.date {
+    opacity: 0.5;
+}
+
+.no-bullets {
+    list-style: none;
+}
+
+.lightweight {
+    font-weight: 300;
+}
+
 /* ****************************** navbar ******************************* */
 .navbar {
     margin-top: 40px;
@@ -89,8 +102,7 @@ img {
 
 /* ****************************** post header ******************************* */
 .post-header {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 
 .post-header > .post-header-title {
@@ -101,10 +113,7 @@ img {
     text-decoration: none;
 }
 
-.post-header > .post-header-date {
-    opacity: 0.5;
-}
-
+/* ****************************** post content ******************************* */
 .post-content > * {
     /* by default, every immediate child element of the post-content div will
     have a top margin and bottom margin of 1rem which provides a nice default

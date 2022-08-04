@@ -2,13 +2,14 @@
 layout: base.liquid
 ---
 
-# Welcome to my site!
-
-Not to brag, but it's pretty great.
-
+<ul class="post-content no-bullets">
 {% for post in collections.posts reversed %}
-  <a href="{{ post.url }}">
-    <h2>{{ post.data.title }}</h2>
-    <time>{{ post.data.date | date: "%B %d, %Y" }}</time>
-  </a>
+  <li class="post-listing">
+    <p class="date">{{ post.data.date | date: "%B %d, %Y" }}</p>
+    <a href="{{ post.url }}">
+        <h3 class="lightweight">{{ post.data.title }}</h3>
+    </a>
+    <p>{{ post.data.description }}</p>
+  </li>
 {% endfor %}
+</ul>

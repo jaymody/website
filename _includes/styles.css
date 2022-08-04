@@ -55,7 +55,7 @@ img {
 }
 
 /* ****************************** navbar ******************************* */
-#navbar {
+.navbar {
     margin-top: 40px;
     margin-bottom: 20px;
     display: flex;
@@ -63,7 +63,7 @@ img {
 }
 
 /* title */
-#navbar > #navbar-title > a {
+.navbar > .navbar-title > a {
     margin-right: 0.5em;
     color: var(--site-title);
     font-size: 1.25rem;
@@ -71,84 +71,84 @@ img {
 }
 
 /* textlinks */
-#navbar > #navbar-textlinks > a {
+.navbar > .navbar-textlinks > a {
     margin: 0 0.5em;
     font-weight: 500;
 }
 
 /* iconlinks */
-#navbar > #navbar-iconlinks {
+.navbar > .navbar-iconlinks {
     margin-right: auto;
     font-size: 1.2rem;
     opacity: 0.7;
 }
 
-#navbar > #navbar-iconlinks > a {
+.navbar > .navbar-iconlinks > a {
     margin: 0 0.5em;
 }
 
 /* ****************************** post header ******************************* */
-#post-header {
+.post-header {
     margin-top: 20px;
     margin-bottom: 40px;
 }
 
-#post-header > #post-header-title {
+.post-header > .post-header-title {
     font-weight: 300;
 }
 
-#post-header > #post-header-title > a {
+.post-header > .post-header-title > a {
     text-decoration: none;
 }
 
-#post-header > #post-header-date {
+.post-header > .post-header-date {
     opacity: 0.5;
 }
 
-#post-content > * {
+.post-content > * {
     /* by default, every immediate child element of the post-content div will
     have a top margin and bottom margin of 1rem which provides a nice default
     for consistent spacing between blocks of different content */
     margin: 1rem 0;
 }
 
-#post-content > h1,
-#post-content > h2,
-#post-content > h3,
-#post-content > h4,
-#post-content > h5,
-#post-content > h6 {
+.post-content > h1,
+.post-content > h2,
+.post-content > h3,
+.post-content > h4,
+.post-content > h5,
+.post-content > h6 {
     margin-top: 2rem;
     line-height: 1;
     font-weight: 400;
 }
 
-#post-content > ol,
-#post-content > ul {
+.post-content > ol,
+.post-content > ul {
     padding-left: 1rem;
 }
-#post-content ol,
-#post-content ul {
+.post-content ol,
+.post-content ul {
     margin-left: 1rem;
 }
 
-#post-content > hr {
+.post-content > hr {
     border: 0;
     border-top: 1px solid var(--hr);
 }
 
-#post-content > blockquote {
+.post-content > blockquote {
     border-left: 3px solid var(--codeblock-header);
     padding-left: 20px;
     opacity: .6;
     font-style: italic;
 }
 
-#post-content > video,
-#post-content > img,
-#post-content > figure,
-#post-content > figure > img,
-#post-content > p > img {
+.post-content > video,
+.post-content > img,
+.post-content > figure,
+.post-content > figure > img,
+.post-content > p > img {
     max-width: 100%;
     border-radius: 8px;
 
@@ -157,7 +157,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-#post-content figure > figcaption {
+.post-content figure > figcaption {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     text-align: center;
@@ -165,19 +165,19 @@ img {
 }
 
 /* mathjax */
-#post-content .MathJax {
+.post-content .MathJax {
     font-size: 1.2rem !important;
 }
 
 /* code */
-#post-content > pre * {
+.post-content > pre * {
     font-size: 0.9rem;
 }
-#post-content code {
+.post-content code {
     border-radius: 4px;
     font-size: 0.9rem;
 }
-#post-content > pre > div {
+.post-content > pre > div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,28 +188,28 @@ img {
     border: 0.5px solid var(--border);
     border-radius: 8px 8px 0px 0px !important;
 }
-#post-content > pre > div > i {
+.post-content > pre > div > i {
     opacity: .4;
 }
-#post-content > pre > div > p {
+.post-content > pre > div > p {
     margin-left: 0.5em;
     opacity: .5;
 }
-#post-content > pre > code {
+.post-content > pre > code {
     border: 0.5px solid var(--border);
     border-top: 0;
     border-radius: 0px 0px 8px 8px !important;
 }
-#post-content .hljs-ln-numbers {
+.post-content .hljs-ln-numbers {
     text-align: right;
     color: #aaaaaa;
     padding-right: 1em !important;
 }
-#post-content .hljs-comment {
+.post-content .hljs-comment {
     opacity: 0.6; /* make comments less visible and easier to differentiate */
 }
 
 /* ****************************** site footer ******************************* */
-#site-footer {
+.site-footer {
     margin-bottom: 40px;
 }

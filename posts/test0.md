@@ -1,6 +1,7 @@
 ---
 title: This is my first post
 date: 2020-01-30
+description: Fizzbuzz, foobar, insert description here.
 ---
 
 Meow in empty room. Stare at invisible bug on ceiling. Stand

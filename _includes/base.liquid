@@ -22,7 +22,10 @@
 
     <!-- apply highlight.js -->
     <script>
-    hljs.configure({ cssSelector: 'code' }); // enables highlight.js for inline code
+    hljs.configure({
+      cssSelector: 'code', // enables highlight.js for inline code
+      languages: [] // disables autodetect language (so inline code isn't highlighted)
+    });
     hljs.highlightAll();
     hljs.initLineNumbersOnLoad();
 

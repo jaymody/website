@@ -13,4 +13,5 @@ module.exports = function (config) {
   config.addPlugin(require('eleventy-plugin-lazyimages'), { // add lazy images
     cacheFile: ""
   });
+  config.addPassthroughCopy({ "static": "/" }); // copy file from static to site root
 }

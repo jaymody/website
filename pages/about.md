@@ -1,3 +1,8 @@
+---
+title: About
+description: A little bit about me.
+---
+
 ### A litte bit about me ...
 
 Hello 👋, my name is Jay. I'm a Software Engineer from Canada.

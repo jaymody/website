@@ -48,7 +48,9 @@
       languages: [] // disables autodetect language (so inline code isn't highlighted)
     });
     hljs.highlightAll();
-    hljs.initLineNumbersOnLoad();
+    // TODO: fix line numbers for mobile, for whatever reason it f*cks
+    // everything up on mobile
+    // hljs.initLineNumbersOnLoad();
 
     // add header to codeblocks
     addEventListener('load', function() {

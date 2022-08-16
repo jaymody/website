@@ -41,7 +41,7 @@ body {
 
     /* allows for footer to be pushed to bottom */
     height: 100vh;
-    min-height: -webkit-fill-available; /* for safari on mobile https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
+    height: -webkit-fill-available !important; /* for safari on mobile https://allthingssmitty.com/2020/05/11/css-fix-for-100vh-in-mobile-webkit/ */
     display:flex;
     flex-direction:column;
 }

@@ -12,9 +12,9 @@ npx @11ty/eleventy --serve --input src --output output
 ```
 The website is published to `localhost:8080`.
 
-By default, the example posts under `posts/` are ignored. If you want to render the example posts, set `ELEVENTY_ENV=dev` before starting the website:
+By default, the example posts under `posts/` are included in the output. These posts are useful as a reference when making changes to the website (includes example markdown, gifs, images, image captions, mathjax, block code, inline code, etc ...). To ignore these posts, set `ELEVENTY_ENV=prd` before starting the website:
 ```bash
-ELEVENTY_ENV=dev npx @11ty/eleventy --serve --input src --output output
+ELEVENTY_ENV=prd npx @11ty/eleventy --serve --input src --output output
 ```
 
 ### Structure

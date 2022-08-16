@@ -1,4 +1,5 @@
 ---
+layout: page.liquid
 title: About
 description: A little bit about me.
 ---

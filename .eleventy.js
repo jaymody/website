@@ -1,4 +1,5 @@
 module.exports = function (eleventyConfig) {
+  // custom markdown parser
   let md = require("markdown-it")({
     html: true, // allows use of html in markdown ()
     breaks: true // converts \n to <br>
@@ -10,8 +11,16 @@ module.exports = function (eleventyConfig) {
   md.use(require('markdown-it-mathjax')()); // render latex ($$...$$) with mathjax
   md.use(require('markdown-it-multimd-table')) // add support for tables
   eleventyConfig.setLibrary("md", md);
-  eleventyConfig.addPlugin(require('eleventy-plugin-lazyimages'), { // add lazy images
-    cacheFile: ""
-  });
-  eleventyConfig.addPassthroughCopy({ "static": "/" }); // copy file from static to site root
+
+  // plugins
+  eleventyConfig.addPlugin(require('eleventy-plugin-lazyimages'));
+
+  // copy files from static to site root
+  eleventyConfig.addPassthroughCopy({ "static": "/" });
+
+  // eleventy ignores
+  eleventyConfig.ignores.add("**/_drafts/");
+  if (process.env.ELEVENTY_ENV === "prd") {
+    eleventyConfig.ignores.add("**/*-example-post-*.md");
+  }
 }

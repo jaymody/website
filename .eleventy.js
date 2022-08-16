@@ -1,4 +1,4 @@
-module.exports = function (config) {
+module.exports = function (eleventyConfig) {
   let md = require("markdown-it")({
     html: true, // allows use of html in markdown ()
     breaks: true // converts \n to <br>
@@ -9,9 +9,9 @@ module.exports = function (config) {
   md.use(require('markdown-it-footnote')); // use [^#] to create footnotes
   md.use(require('markdown-it-mathjax')()); // render latex ($$...$$) with mathjax
   md.use(require('markdown-it-multimd-table')) // add support for tables
-  config.setLibrary("md", md);
-  config.addPlugin(require('eleventy-plugin-lazyimages'), { // add lazy images
+  eleventyConfig.setLibrary("md", md);
+  eleventyConfig.addPlugin(require('eleventy-plugin-lazyimages'), { // add lazy images
     cacheFile: ""
   });
-  config.addPassthroughCopy({ "static": "/" }); // copy file from static to site root
+  eleventyConfig.addPassthroughCopy({ "static": "/" }); // copy file from static to site root
 }

@@ -1,0 +1,6 @@
+{
+    "redirects": [
+      { "source": "/resume", "destination": "/Jay_Mody_Resume.pdf" },
+      { "source": "/resume.pdf", "destination": "/Jay_Mody_Resume.pdf"}
+    ]
+}

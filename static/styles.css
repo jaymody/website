@@ -179,11 +179,6 @@ img {
     opacity: .6;
 }
 
-/* mathjax */
-.post-content .MathJax {
-    font-size: 1.2rem !important;
-}
-
 /* code */
 .post-content > pre * {
     font-size: 0.9rem;

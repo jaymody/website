@@ -6,9 +6,7 @@ description: A little bit about me.
 
 ### A litte bit about me ...
 
-Hello 👋, my name is Jay. I'm a Software Engineer from Canada.
-
-I'm currently taking a gap year from University to intern and travel.
+Hello 👋, my name is Jay. I'm currently working on ML at [Cohere](https://cohere.ai).
 
 Links:
 - [the hub 😏](https://github.com/jaymody)

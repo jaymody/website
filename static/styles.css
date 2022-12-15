@@ -153,7 +153,7 @@ img {
 }
 
 .post-content > blockquote {
-    border-left: 3px solid var(--codeblock-header);
+    border-left: 3px solid var(--blockquote);
     padding-left: 20px;
     opacity: .6;
     font-style: italic;
@@ -161,10 +161,11 @@ img {
 
 .post-content > video,
 .post-content > img,
-.post-content > figure,
 .post-content > figure > img,
 .post-content > p > img {
+    object-fit: contain;
     max-width: 100%;
+    max-height: 400px;
     border-radius: 8px;
 
     /* center */

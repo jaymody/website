@@ -14,19 +14,15 @@
 	--b-focus: #d8dee9;
 }
 
-body {
-    position: relative;
-    min-height: 100vh;
-}
-
 header {
     padding-top: 5vh;
     margin-bottom: 5vh;
     text-align: center;
 }
 
-main {
-    padding-bottom: 2.5rem;
+footer {
+    text-align: center;
+    opacity: 0.5;
 }
 
 img, video {
@@ -41,22 +37,9 @@ img, video {
 }
 
 figcaption {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-align: center;
     opacity: .6;
-}
-
-.footnotes {
-    opacity: 0.6;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    opacity: 0.5;
 }
 
 pre {
@@ -69,7 +52,12 @@ hr {
     background-color: var(--hr);
 }
 
-/* make comments more visible and easier to differentiate for nord theme */
+.footnotes {
+    /* make footnotes lighter to visually separate them from the actual post content */
+    opacity: 0.6;
+}
+
 .hljs-comment {
+    /* make codeblock comments easier to differentiate */
     color: #8d9196;
 }

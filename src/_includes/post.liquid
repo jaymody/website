@@ -1,10 +1,8 @@
 ---
 layout: base.liquid
 ---
-<hgroup>
-  <h1 class="post-header-title">{{ title }}</h1>
-  <p class="date">{{ date | date: "%B %d, %Y" }}</p>
-  <hr>
-</hgroup>
+<h1 class="post-header-title">{{ title }}</h1>
+<p style="opacity: 0.5;">{{ date | date: "%B %d, %Y" }}</p>
+<hr>
 
 {{ content }}

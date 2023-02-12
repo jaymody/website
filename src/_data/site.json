@@ -2,9 +2,10 @@
     "title": "Jay Mody",
     "description": "My little corner of the internet.",
     "url": "https://jaykmody.com",
-    "authorName": "Jay Mody",
-    "authorUrl": "https://jaykmody.com/about",
+    "authorName": "Jay Mody's",
+    "authorUrl": "https://jaykmody.com/",
     "image": "https://jaykmody.com/profile.png",
     "linkedin": "https://linkedin.com/in/jaykmody/",
-    "github": "https://github.com/jaymody"
+    "github": "https://github.com/jaymody",
+    "footer": "© 2023 Jay Mody"
 }

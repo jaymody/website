@@ -1,12 +1,10 @@
 ---
 layout: base.liquid
 ---
-<div class="post-header">
+<hgroup>
   <h1 class="post-header-title">{{ title }}</h1>
   <p class="date">{{ date | date: "%B %d, %Y" }}</p>
-</div>
-
-<div class="post-content">
   <hr>
-  {{ content }}
-</div>
+</hgroup>
+
+{{ content }}

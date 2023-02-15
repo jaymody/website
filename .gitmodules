@@ -1,0 +1,4 @@
+[submodule "src/posts/blogposts"]
+	path = src/posts/blogposts
+	url = https://github.com/jaymody/blogposts
+	branch = master

@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
 
   // plugins
   eleventyConfig.addPlugin(require('eleventy-plugin-lazyimages'));
+  eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-rss"));
 
   // copy files from static to site root
   eleventyConfig.addPassthroughCopy({ "static": "/" });

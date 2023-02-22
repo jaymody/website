@@ -1,11 +1,12 @@
 {
     "title": "Jay Mody",
-    "description": "My little corner of the internet.",
+    "description": "A blog about things and stuff.",
     "url": "https://jaykmody.com",
     "authorName": "Jay Mody's",
     "authorUrl": "https://jaykmody.com/",
     "image": "https://jaykmody.com/profile.png",
     "linkedin": "https://linkedin.com/in/jaykmody/",
     "github": "https://github.com/jaymody",
+    "twitter": "https://twitter.com/jaykmody",
     "footer": "© 2023 Jay Mody"
 }

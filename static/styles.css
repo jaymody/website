@@ -52,6 +52,10 @@ hr {
     background-color: var(--hr);
 }
 
+nav {
+    font-size: 1.2rem;
+}
+
 .footnotes {
     /* make footnotes lighter to visually separate them from the actual post content */
     opacity: 0.6;

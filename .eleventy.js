@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
   md.use(require('markdown-it-multimd-table')) // add support for tables
   md.use(require('markdown-it-anchor').default) // add anchors to headers
   md.use(require("markdown-it-table-of-contents"), {
-    "includeLevel": [2,3,4]
+    "includeLevel": [2, 3, 4]
   }) // toc support
   eleventyConfig.setLibrary("md", md);
 

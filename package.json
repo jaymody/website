@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "eleventy --serve --input src --output output",
+    "serve-prod": "ELEVENTY_ENV=prd npm run serve"
   },
   "keywords": [],
   "author": "",

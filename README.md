@@ -8,13 +8,13 @@ npm install
 
 ### Usage
 ```bash
-npx @11ty/eleventy --serve --input src --output output
+npm run serve
 ```
-The website is published to `localhost:8080`.
 
-By default, the example posts under `posts/` are included in the output. These posts are useful as a reference when making changes to the website (includes example markdown, gifs, images, image captions, mathjax, block code, inline code, etc ...). To ignore these posts, set `ELEVENTY_ENV=prd` before starting the website:
+By default, the example posts under `posts/` are included in the output. These posts are useful as a reference when making changes to the website (includes example markdown, gifs, images, image captions, mathjax, block code, inline code, etc ...). To ignore these posts:
+
 ```bash
-ELEVENTY_ENV=prd npx @11ty/eleventy --serve --input src --output output
+npm run serve-prod
 ```
 
 ### Structure

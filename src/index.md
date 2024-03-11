@@ -3,7 +3,9 @@ layout: base.liquid
 ---
 
 ### Hello 👋🏽
-I'm Jay and this is my blog where I write things. I love meeting new people, so feel free to reach out to me via email `jaykmody [at] gmail [dot] com`.
+I'm Jay, this is my blog where I write things.
+
+You can get in touch with me at `jaykmody [at] gmail [dot] com`. Don't by shy, I love receiving emails.
 
 ### Posts
 

@@ -5,7 +5,7 @@ layout: base.liquid
 ### Hello 👋🏽
 I'm Jay, this is my blog where I write things.
 
-You can get in touch with me at `jaykmody [at] gmail [dot] com`. Don't by shy, I love receiving emails.
+You can get in touch with me at `jaykmody [at] gmail [dot] com`. Don't be shy, I love receiving emails.
 
 ### Posts
 
